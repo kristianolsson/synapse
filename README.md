@@ -10,11 +10,11 @@ Synapse is a personal assistant that lives in your inbox and your messages, not 
 
 ## How it works
 
-No new app to learn. Synapse listens on the channels you already have open, and answers back the same way.
+No new app to learn — and most of what it does happens before you'd think to ask, running quietly in the background. When you do reach for it, it's already on the channels you have open.
 
-- **Telegram** — Quick back-and-forth. Send a task, a link, a question — get a reply in seconds, with one-tap buttons for anything you can check off.
+- **Scheduled** — The workhorse channel. A reminder can be a one-line nudge, or a fully custom recurring task with its own prompt and schedule — a market summary, a daily check-in, a deep weekly analysis. Build it once, and it runs on its own from then on.
 - **Email** — Ask it something that needs real research, or forward it a receipt. It stays quiet on routine confirmations and speaks up when there's something to tell you.
-- **Scheduled** — Set it and forget it. A weekly market summary, a daily check-in, a Monday options scan — delivered on its own, without you asking.
+- **Telegram** — Quick back-and-forth. Send a task, a link, a question — get a reply in seconds, with one-tap buttons for anything you can check off.
 
 ## What ships with it
 
