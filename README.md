@@ -16,17 +16,25 @@ No new app to learn. Synapse listens on the channels you already have open, and 
 - **Email** — Ask it something that needs real research, or forward it a receipt. It stays quiet on routine confirmations and speaks up when there's something to tell you.
 - **Scheduled** — Set it and forget it. A weekly market summary, a daily check-in, a Monday options scan — delivered on its own, without you asking.
 
-## What it actually does
+## What ships with it
 
-Not a chatbot that just talks — it takes real actions against your real accounts.
+Not a chatbot that just talks — it takes real actions against real accounts. Each of these is a starting point, not a limit (see below).
 
-- **Tasks & reminders** — "Remind me every Saturday to call mom" becomes a real recurring reminder, delivered by text or email, no app required.
 - **Projects** — Every ongoing thing gets its own file — a home project, a side build, a trip — organized by area, with a live dashboard of what's active. Finish one and it's archived automatically.
+- **Research & links** — Send it an article and it saves and summarizes it, filed under the right project automatically.
+- **Tasks & reminders** — "Remind me every Saturday to call mom" becomes a real recurring reminder, delivered by text or email, no app required.
+- **Email** — Drafts replies and organizes your inbox — drafts only. It never sends without you.
+- **Stocks & investing** — Watches a portfolio, scans for options opportunities against thresholds you set, and sends a weekly market summary worth actually reading.
 - **Calendar** — Reads and writes your Google Calendar in plain English — "move Thursday's dentist appointment to 3pm."
 - **Groceries** — Builds and manages an Amazon Fresh cart from a running shopping list, remembering what you usually buy.
-- **Stocks & investing** — Watches your portfolio, scans for options opportunities against your own thresholds, and sends a weekly market summary you can actually read.
-- **Research & links** — Send it an article and it saves and summarizes it, filed under the right project automatically.
-- **Email** — Drafts replies and organizes your inbox — drafts only. It never sends without you.
+
+## Built to be changed
+
+Every module above comes from a small protocol file — plain instructions the assistant reads before it acts. Once you clone the vault template, those files are yours: tighten a rule, add a module for something you track that isn't listed here, or delete one you'll never touch. A few ideas:
+
+- **A daily check-in** — Two reminders and a short protocol turn it into a habit tracker — sleep, workouts, a no-spend month, whatever you're actually trying to build.
+- **A running project log** — A renovation, a job search, a move — its own file, its own dashboard, updated as you go instead of scattered across notes apps.
+- **A weekly digest** — Market news, a hobby, a backlog of saved links — summarized and delivered on whatever schedule you set, not whenever you remember to check.
 
 ## Yours, not theirs
 
