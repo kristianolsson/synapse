@@ -32,9 +32,9 @@ Not a chatbot that just talks — it takes real actions against real accounts. E
 
 Every module above comes from a small protocol file — plain instructions the assistant reads before it acts. Once you clone the vault template, those files are yours: tighten a rule, add a module for something you track that isn't listed here, or delete one you'll never touch. A few ideas:
 
+- **Recurring research, not just reminders** — A scheduled task that actually goes and looks — this week's schedule, last week's market move, the storylines heading into a big game — written up and delivered before you'd have thought to check.
+- **A project that grows by text** — Think out loud over a few messages, or fire off a one-line update mid-day — it lands in the right project file, no app to open, no thread to lose.
 - **A daily check-in** — Two reminders and a short protocol turn it into a habit tracker — sleep, workouts, a no-spend month, whatever you're actually trying to build.
-- **A running project log** — A renovation, a job search, a move — its own file, its own dashboard, updated as you go instead of scattered across notes apps.
-- **A weekly digest** — Market news, a hobby, a backlog of saved links — summarized and delivered on whatever schedule you set, not whenever you remember to check.
 
 ## Yours, not theirs
 
