@@ -21,6 +21,7 @@ No new app to learn. Synapse listens on the channels you already have open, and 
 Not a chatbot that just talks — it takes real actions against your real accounts.
 
 - **Tasks & reminders** — "Remind me every Saturday to call mom" becomes a real recurring reminder, delivered by text or email, no app required.
+- **Projects** — Every ongoing thing gets its own file — a home project, a side build, a trip — organized by area, with a live dashboard of what's active. Finish one and it's archived automatically.
 - **Calendar** — Reads and writes your Google Calendar in plain English — "move Thursday's dentist appointment to 3pm."
 - **Groceries** — Builds and manages an Amazon Fresh cart from a running shopping list, remembering what you usually buy.
 - **Stocks & investing** — Watches your portfolio, scans for options opportunities against your own thresholds, and sends a weekly market summary you can actually read.
