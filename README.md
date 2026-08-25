@@ -1,5 +1,7 @@
 # Synapse
 
+![Synapse mascot](vault-profile.jpg)
+
 Text it. Email it. It handles it — and remembers everything.
 
 Synapse is a personal assistant that lives in your inbox and your messages, not an app you have to open. It manages your tasks, your calendar, your groceries — even your stock watchlist — and every conversation is written to plain files you own, on a machine you control.

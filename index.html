@@ -1,5 +1,16 @@
 <title>Synapse</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/jpeg" href="vault-profile.jpg" />
+<link rel="apple-touch-icon" href="vault-profile.jpg" />
+<meta name="description" content="Text it. Email it. It handles it — and remembers everything. A personal AI assistant that lives in your inbox and messages, backed by files you own." />
+<meta property="og:title" content="Synapse" />
+<meta property="og:description" content="Text it. Email it. It handles it — and remembers everything." />
+<meta property="og:image" content="vault-profile.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Synapse" />
+<meta name="twitter:description" content="Text it. Email it. It handles it — and remembers everything." />
+<meta name="twitter:image" content="vault-profile.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -139,6 +150,9 @@
     margin: 0 auto;
   }
   .wordmark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--font-display);
     font-weight: 600;
     font-size: 1.25rem;
@@ -146,6 +160,23 @@
   }
   .wordmark span {
     color: var(--ember);
+  }
+  .wordmark img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+  }
+
+  .hero-badge {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--rule);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--glow) 12%, transparent);
+    display: block;
   }
   nav.links {
     display: flex;
@@ -552,7 +583,7 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="wordmark">Synapse<span>.</span></div>
+    <div class="wordmark"><img src="vault-profile.jpg" alt="" /> Synapse<span>.</span></div>
     <nav class="links">
       <a href="#channels">How it works</a>
       <a href="#features">Features</a>
@@ -565,7 +596,8 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Personal AI · self-hosted</p>
+      <img class="hero-badge" src="vault-profile.jpg" alt="The Synapse vault mascot: a small robot inside a locked shield, in a forest at dusk" />
+      <p class="eyebrow" style="margin-top: 18px">Personal AI · self-hosted</p>
       <h1>Text it. Email it. <em>It handles it</em> — and remembers everything.</h1>
       <p class="hero-sub">
         Synapse is a personal assistant that lives in your inbox and your messages, not an app you have to
