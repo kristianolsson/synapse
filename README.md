@@ -4,7 +4,7 @@ Text it. Email it. It handles it — and remembers everything.
 
 Synapse is a personal assistant that lives in your inbox and your messages, not an app you have to open. It tracks the projects you're actually working on, runs the research you'd otherwise forget to do, and takes a quick note the moment you think of it — every conversation written to plain files you own, on a machine you control.
 
-**[See it live →](https://kristianolsson.github.io/synapse/)**
+**[Learn more →](https://kristianolsson.github.io/synapse/)**
 
 ![Synapse mascot](vault-profile.jpg)
 
@@ -42,11 +42,11 @@ Every note is a file. Every file is yours, in a repository you control.
 
 - **No vendor database** — Your tasks, links, and history live as plain Markdown in a git repository on your own machine, not locked inside someone else's app.
 - **Full history, always** — Every change is a commit. Nothing is ever silently overwritten or lost.
-- **Switch AI providers freely** — Not locked into one company's assistant. Works with Claude Code, Antigravity CLI, and Gemini CLI.
+- **Switch AI providers freely** — Not locked into one company's assistant. Works with Claude Code and Antigravity CLI.
 
 ## Get started
 
-Two open-source repos, plus your own private vault:
+Two repos, plus your own private vault:
 
 - **[synapse-engine](https://github.com/kristianolsson/synapse-engine)** — runs the assistant and talks to Email, Telegram, and your calendar.
 - **[synapse-vault](https://github.com/kristianolsson/synapse-vault)** — a clean template vault with no personal data. Clone it, run one setup script, and it's yours.

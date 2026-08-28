@@ -14,71 +14,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
   rel="stylesheet"
 />
 
 <style>
   /* ---------- tokens ---------- */
+  /* shared with kristianolsson.com's src/app.css: --bg/--surface/--ink/
+     --ink-dim/--rule/--accent/--accent-dim, single warm-neutral palette */
   :root {
-    /* dark-first: bare root = dark walnut palette */
-    --pine-950: #1a140e;
-    --pine-900: #201810;
-    --pine-800: #2a2015;
-    --pine-700: #3b2d1c;
-    --stone-100: #f2e9da;
-    --stone-300: #cbb99e;
-    --ink: #f2e9da;
-    --ink-dim: #b3a28a;
-    --surface: #241b12;
-    --surface-raised: #2d2216;
-    --rule: rgba(242, 233, 218, 0.13);
-    --ember: #c97a42;
-    --ember-dim: #ac6535;
-    --glow: #93ab72;
-    --glow-dim: #798f5b;
-
-    --font-display: "Fraunces", "Iowan Old Style", "Georgia", serif;
-    --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-    --font-mono: "IBM Plex Mono", "SF Mono", Menlo, monospace;
-  }
-
-  @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) {
-      --pine-950: #f6f0e3;
-      --pine-900: #efe7d5;
-      --pine-800: #e4d9c1;
-      --pine-700: #cfbd9c;
-      --stone-100: #2b2318;
-      --stone-300: #5a4d38;
-      --ink: #2b2318;
-      --ink-dim: #6d6049;
-      --surface: #fffcf5;
-      --surface-raised: #ffffff;
-      --rule: rgba(43, 35, 24, 0.12);
-      --ember: #b05f2c;
-      --ember-dim: #924e24;
-      --glow: #5d7645;
-      --glow-dim: #4a5f37;
-    }
-  }
-
-  :root[data-theme="light"] {
-    --pine-950: #f6f0e3;
-    --pine-900: #efe7d5;
-    --pine-800: #e4d9c1;
-    --pine-700: #cfbd9c;
-    --stone-100: #2b2318;
-    --stone-300: #5a4d38;
-    --ink: #2b2318;
-    --ink-dim: #6d6049;
-    --surface: #fffcf5;
+    --pine-950: #f5efe2;
+    --pine-900: #e6ddcc;
+    --stone-300: #a89a82;
+    --ink: #3a3226;
+    --ink-dim: #6b6152;
+    --surface: #ede5d6;
     --surface-raised: #ffffff;
-    --rule: rgba(43, 35, 24, 0.12);
-    --ember: #b05f2c;
-    --ember-dim: #924e24;
-    --glow: #5d7645;
-    --glow-dim: #4a5f37;
+    --rule: rgba(58, 50, 38, 0.14);
+    --ember: #3a3226;
+    --ember-dim: #1c1810;
+    --glow: #82725a;
+
+    --font-display: "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+    --font-body: "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", "SF Mono", Menlo, monospace;
   }
 
   /* ---------- base ---------- */
@@ -104,7 +63,7 @@
   h2,
   h3 {
     font-family: var(--font-display);
-    font-weight: 600;
+    font-weight: 700;
     text-wrap: balance;
     margin: 0;
     color: var(--ink);
@@ -137,7 +96,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background: color-mix(in srgb, var(--pine-900) 88%, transparent);
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--rule);
   }
@@ -158,9 +117,6 @@
     font-size: 1.25rem;
     letter-spacing: 0.01em;
   }
-  .wordmark span {
-    color: var(--ember);
-  }
   .wordmark img {
     width: 30px;
     height: 30px;
@@ -180,7 +136,8 @@
   }
   nav.links {
     display: flex;
-    gap: 28px;
+    flex-wrap: wrap;
+    gap: 12px 28px;
     font-size: 0.92rem;
   }
   nav.links a {
@@ -307,9 +264,6 @@
   .log-line:nth-child(5) {
     animation-delay: 2s;
   }
-  .log-line:nth-child(6) {
-    animation-delay: 2.5s;
-  }
   @keyframes logIn {
     to {
       opacity: 1;
@@ -344,39 +298,11 @@
     content: "→ ";
     color: var(--stone-300);
   }
-  .log-commit {
-    color: var(--ink-dim);
-    font-size: 0.8rem;
-    border-top: 1px dashed var(--rule);
-    padding-top: 13px;
-    margin-top: 2px;
-  }
-  .log-commit .hash {
-    color: var(--glow);
-  }
-  .cursor {
-    display: inline-block;
-    width: 7px;
-    height: 1em;
-    background: var(--glow);
-    vertical-align: text-bottom;
-    margin-left: 2px;
-    animation: blink 1s step-end infinite;
-  }
-
   @media (prefers-reduced-motion: reduce) {
     .log-line {
       animation: none;
       opacity: 1;
       transform: none;
-    }
-    .cursor {
-      animation: none;
-    }
-  }
-  @keyframes blink {
-    50% {
-      opacity: 0;
     }
   }
 
@@ -398,6 +324,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
+    background: var(--surface);
     border: 1px solid var(--rule);
     border-radius: 10px;
     overflow: hidden;
@@ -570,8 +497,15 @@
     .ownership-grid {
       grid-template-columns: 1fr;
     }
+    .nav-inner {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      row-gap: 12px;
+    }
     nav.links {
-      display: none;
+      justify-content: center;
+      gap: 12px 20px;
     }
   }
 
@@ -583,7 +517,7 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="wordmark"><img src="vault-profile.jpg" alt="" /> Synapse<span>.</span></div>
+    <div class="wordmark"><img src="vault-profile.jpg" alt="" /> Synapse</div>
     <nav class="links">
       <a href="#channels">How it works</a>
       <a href="#features">Features</a>
@@ -616,25 +550,23 @@
       <div class="log-panel-head"><span class="dot"></span> live in your vault</div>
       <div class="log-body">
         <div class="log-line">
-          <span class="tag tag-tg">telegram</span>remind me to call the dentist tomorrow at 9
-          <div class="log-reply">Reminder set — tomorrow, 9:00&nbsp;AM.</div>
+          <span class="tag tag-tg">telegram</span>log todo to call insurance
+          <div class="log-reply">Added to your todos.</div>
         </div>
         <div class="log-line">
-          <span class="tag tag-tg">telegram</span>add milk and eggs to groceries
-          <div class="log-reply">Added to your cart.</div>
+          <span class="tag tag-email">email</span>Daily Todo Digest — top 5 by urgency, sent 7:05&nbsp;AM
         </div>
         <div class="log-line">
-          <span class="tag tag-email">email</span>Weekly Market Summary — sent Sun 2:00&nbsp;AM
+          <span class="tag tag-tg">telegram</span>each sunday morning, research the upcoming NFL schedule and give me the top matchups with brief analysis — if there's nothing on, do nothing
+          <div class="log-reply">Recurring task set — every Sunday morning.</div>
         </div>
         <div class="log-line">
-          <span class="tag tag-cron">scheduled</span>Options scan — weekdays 7:40&nbsp;AM
+          <span class="tag tag-email">email</span>school-year-schedule.pdf attached — extract the days off and add them to my and my wife's calendars
+          <div class="log-reply">14 days off added to both calendars.</div>
         </div>
         <div class="log-line">
-          <span class="tag tag-email">email</span>"what's on my calendar friday?"
-          <div class="log-reply">3 events — details sent.</div>
-        </div>
-        <div class="log-line log-commit">
-          <span class="hash">a7f2c9e</span> Synapse Sync: log dentist reminder<span class="cursor"></span>
+          <span class="tag tag-tg">telegram</span>create a project to plan our family trip to Hawaii for Christmas
+          <div class="log-reply">Project created — Hawaii Trip.</div>
         </div>
       </div>
     </div>
@@ -720,7 +652,7 @@
       </div>
       <div class="feature">
         <h3>Calendar</h3>
-        <p>Reads and writes your Google Calendar in plain English — "move Thursday's dentist appointment to 3pm."</p>
+        <p>Reads and writes your Google Calendar in plain English — attach a school-year schedule and it'll extract every day off and add them to your calendar.</p>
       </div>
       <div class="feature">
         <h3>Groceries</h3>
@@ -781,7 +713,6 @@
       <span>Works with</span>
       <span class="chip">Claude Code</span>
       <span class="chip">Antigravity CLI</span>
-      <span class="chip">Gemini CLI</span>
     </div>
   </div>
 </section>
@@ -789,7 +720,7 @@
 <section id="start">
   <div class="wrap final-cta">
     <p class="eyebrow">Get started</p>
-    <h2>Two open-source repos. Your own private vault.</h2>
+    <h2>Two repos. Your own private vault.</h2>
     <p>
       <strong>synapse-engine</strong> runs the assistant and talks to Email, Telegram, and your calendar.
       <strong>synapse-vault</strong> is a clean template vault with no personal data — clone it, run one
@@ -804,7 +735,7 @@
 
 <footer>
   <div class="wrap footer-inner">
-    <span>Synapse — open source, self-hosted.</span>
+    <span>Synapse — self-hosted.</span>
     <div class="footer-links">
       <a href="https://github.com/kristianolsson/synapse-engine">synapse-engine</a>
       <a href="https://github.com/kristianolsson/synapse-vault">synapse-vault</a>
