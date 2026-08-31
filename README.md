@@ -27,6 +27,7 @@ Not a chatbot that just talks — it takes real actions against real accounts. E
 - **Stocks & investing** — Watches a portfolio, scans for options opportunities against thresholds you set, and sends a weekly market summary worth actually reading.
 - **Calendar** — Reads and writes your Google Calendar in plain English — "move Thursday's dentist appointment to 3pm."
 - **Groceries** — Builds and manages an Amazon Fresh cart from a running shopping list, remembering what you usually buy.
+- **Home** — Turns off the lights, checks if the garage is open, bumps the thermostat — plain-English control over your SmartThings devices.
 
 ## Built to be changed
 
