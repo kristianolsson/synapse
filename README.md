@@ -28,6 +28,7 @@ Not a chatbot that just talks — it takes real actions against real accounts. E
 - **Calendar** — Reads and writes your Google Calendar in plain English — "move Thursday's dentist appointment to 3pm."
 - **Groceries** — Builds and manages an Amazon Fresh cart from a running shopping list, remembering what you usually buy.
 - **Home** — Turns off the lights, checks if the garage is open, bumps the thermostat — plain-English control over your SmartThings devices.
+- **Web browsing** — Opens real websites when a task needs them — searches flight fares, fills in forms, reads results pages — in a headless browser on your own server. Whatever a page says is treated as data, never as instructions.
 
 ## Built to be changed
 
